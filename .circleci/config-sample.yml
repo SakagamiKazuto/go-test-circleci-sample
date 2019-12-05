@@ -6,8 +6,8 @@ jobs:
   build:
     docker:
       # specify the version
-      - image: circleci/golang:1.9
-
+      - image: circleci/golang:1.8
+      
       # Specify service dependencies here if necessary
       # CircleCI maintains a library of pre-built images
       # documented at https://circleci.com/docs/2.0/circleci-images/
@@ -17,8 +17,7 @@ jobs:
     #### expecting it in the form of
     ####   /go/src/github.com/circleci/go-tool
     ####   /go/src/bitbucket.org/circleci/go-tool
-    working_directory: /go/src/github.com/{{ORG_NAME}}/{{REPO_NAME}}
-    working_directory: /go/src/github.com/SakagamiKazuto/go-test-circleci-sample
+    working_directory: /go/src/github.com/tweeeety/go-test-by-circleci-sample
     steps:
       - checkout
 
